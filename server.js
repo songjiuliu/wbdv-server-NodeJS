@@ -17,4 +17,4 @@ require('./controllers/questions.controller.server')(app)
 
 app.get('/hello', (req, res) => res.send('hello world!'))
 
-app.listen(6324)
+app.listen(process.env.PORT || 5000)
